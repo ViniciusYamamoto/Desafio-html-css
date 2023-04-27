@@ -1,0 +1,182 @@
+body{
+    background-image: url(../images/bg-desktop.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "topo"
+                         "informacao"
+                         "rodape";
+}
+
+.topo{
+    grid-area: topo;
+    height: 100px;
+    display: flex;
+}
+
+.image-logo{
+    width: 150px;
+    margin-left: 5%;
+}
+
+.informacao{
+    grid-area: informacao;
+    display: flex;
+    position: relative;
+}
+
+.imagem-principal{
+    width: 45%;
+    margin: 1% 0 0 5%;
+}
+
+.texto{
+    padding: 4% 0 0 7%;
+}
+
+.titulo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 35px;
+    padding-right: 15%;
+    margin-right: 6%;
+}
+
+.paragrafo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 15px;
+    padding-right: 8%;
+    margin-top: 20px;
+    margin-right: 6%;
+}
+
+.botao{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: hsl(257, 40%, 49%);
+    font-size: 14px;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    padding-right: 6%;
+    box-shadow: 2px 2px 10px hsl(257, 40%, 30%);
+    margin-top: 20px;
+}
+
+.botao:hover{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.rodape{
+    grid-area: rodape;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-right: 6%;
+}
+
+.fa-facebook{
+    color: #ffffff;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.fa-twitter{
+    color: #ffffff;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.fa-instagram{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.fa-facebook:hover{
+    cursor: pointer;
+    color: #808080;
+}
+
+.fa-twitter:hover{
+    cursor: pointer;
+    color: #808080;
+}
+
+.fa-instagram:hover{
+    cursor: pointer;
+    color: #808080;
+}
+
+@media (max-width: 375px) {
+    body{
+        background-image: url(../images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 110%;
+    }
+
+    .informacao{
+        display: block;
+    }
+
+    .imagem-principal{
+        margin: 0;
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .texto{
+        padding: 0;
+        margin-top: 15%;
+    }
+
+    .titulo{
+        text-align: center;
+        font-size: 25px;
+        padding: 0 10%;
+        margin: 0;
+    }
+
+    .paragrafo{
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+        padding: 0 15%;
+        text-align: center;
+    }
+
+    .botao{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: hsl(257, 40%, 49%);
+        font-size: 14px;
+        width: 200px;
+        text-align: center;
+        border-radius: 20px;
+        border: none;
+        padding: 5px;
+        padding-right: 6%;
+        box-shadow: 2px 2px 10px hsl(257, 40%, 30%);
+        margin: 20px 0px 10px 85px;
+    }
+
+    .rodape{
+        grid-area: rodape;
+        display: flex;
+        height: 50px;
+        flex-direction: row-reverse;
+        margin-top: 20px;
+        padding-right: 35%;
+    }
+}
